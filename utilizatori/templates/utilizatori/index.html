@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ <h1>Utilizatori</h1>
+
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+             <th>Number of Login</th>
+
+            <th></th>
+            <th></th>
+        </tr>
+
+    {% for utilizator in lst %}
+        <tr>
+            <td>{{utilizator.id}}</td>
+            <td>{{utilizator.first_name}}</td>
+            <td>{{utilizator.last_name}}</td>
+            <td>{{utilizator.number_of_login}}</td>
+
+        </tr>
+    {% endfor %}
+    </table>
+
+
+</body>
+</html>
